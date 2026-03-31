@@ -6,9 +6,9 @@ from PIL import Image
 #==================================================================== we must firstly open the image
 
 #here I used relative path, but we can use the absolute if the image is saved in another folder
-# path = "./images/image.jfif"
+path = "./images/image.jfif"
 # newPath = "./images/new.png"
-# myImg = Image.open(path)
+myImg = Image.open(path)
 # newImg = Image.open(newPath)
 # print(newImg)
 # newImg.show()
@@ -65,4 +65,16 @@ from PIL import Image
 # rotatedImg = myImg.rotate(100.25) 
 # rotatedImg.show()
 # rotatedImg.save("rotated_img.png")
+
+#==================================================================  transpose()
+
+# myImg.show()
+# rotatedImage = myImg.transpose(Image.TRANSVERSE)
+# rotatedImage.show()
+
+# flippedLeftRightImage = myImg.transpose(Image.FLIP_LEFT_RIGHT)
+# flippedLeftRightImage.show()
+# flippedTopBottomImage = myImg.transpose(Image.FLIP_TOP_BOTTOM)
+# flippedTopBottomImage.show()
+
 
