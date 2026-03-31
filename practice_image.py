@@ -6,10 +6,16 @@ from PIL import Image
 #==================================================================== we must firstly open the image
 
 #here I used relative path, but we can use the absolute if the image is saved in another folder
-path = "./images/image.jfif"
-myImg = Image.open(path)
+# path = "./images/image.jfif"
+# newPath = "./images/new.png"
+# myImg = Image.open(path)
+# newImg = Image.open(newPath)
+# print(newImg)
+# newImg.show()
 # myImg.show()
-
+# print(myImg)
+# myImg.save("new.png")
+# myNewImg = Image.open("./images/")
 #===================================================================== Crop image 
 
 # myBox = (50,50,100,100) #top left right buttom
@@ -32,4 +38,31 @@ myImg = Image.open(path)
 
 # print(myImg.mode)
 
-#================================================================== Convert files to JPEG 
+#==================================================================  change img dimentions
+
+# newSecImg = myImg.resize((100,100))
+# newSecImg.show()
+
+# imgSize = myImg.size
+# dimentionX = int(imgSize[0] / 3)
+# dimentionY = int(imgSize[1] / 3)
+# print(type(dimentionX))
+# print(dimentionY)
+
+# smallImg = myImg.resize((dimentionX,dimentionY))
+# smallImg.show()
+# copyImg = myImg.copy()
+# print(copyImg)
+# copyImg.show()
+# copyImg.thumbnail((100,20)) #20X20  because thumbnail method respect ratio
+# copyImg.show()
+# thumbImg = copyImg.thumbnail((100,200))
+# thumbImg.show()
+# print(thumbImg.size)
+
+#==================================================================  Rortation
+
+# rotatedImg = myImg.rotate(100.25) 
+# rotatedImg.show()
+# rotatedImg.save("rotated_img.png")
+
